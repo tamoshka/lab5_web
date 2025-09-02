@@ -11,5 +11,5 @@ install:
   - pip install requests
 
 test_script:
-  - cd flaskapp
   - st.bat
+  - cd flaskapp
