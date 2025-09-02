@@ -1,0 +1,14 @@
+image: Visual Studio 2019
+
+environment:
+  PYTHON: "C:\\Python39"
+
+install:
+  - pip install flask
+
+build_script:
+  - python -c "import sys; print(sys.version)"
+
+test_script:
+  - python ./flaskapp/some_app.py &
+  - cmd /c "flaskapp\st.bat"  # Use a batch file instead of shell script
