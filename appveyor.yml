@@ -4,7 +4,9 @@ environment:
   PYTHON: C:\Python39
 
 install:
-  - pip install flask gunicorn requests
+  - pip install flask
+  - pip install gunicorn
+  - pip install requests
 
 test_script:
   - cd flaskapp
